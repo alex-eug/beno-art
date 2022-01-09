@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap');
+
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*{
+    font-family: 'Cairo', sans-serif;
+}
+body{
+    background-color: #ACACAD;
+}
+
+/* nav */
+
+.header-nav{
+    position: fixed;
+    display: flex;
+    z-index: 10;
+    background-color: #a1a1a144;
+    width: 100%;
+    height: 40px;
+    align-items: flex-start;
+}
+
+.header-nav  ul{
+    display: flex;
+    list-style-type: none;
+    
+}
+.nav-item{
+    padding: 0 15px;
+}
+.nav-item>a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.nav-item a::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 0%;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    transition: width 0.2s ease-in-out;
+   
+}
+.nav-item a:hover::after {
+    width: 100%;
+}
+.header-nav a{
+    margin: 5px 5px 5px auto;
+}
+.header-nav img{
+    background-color:rgb(233, 233, 223) ;
+    border-radius: 30%;
+    width: 30px;
+    height: auto;
+}
+.header-nav:hover img{
+    border-radius: 13%;
+}
+
+/* nav */
+/* acceuil */
+.accueil{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.267), 
+        rgba(0, 0, 0, 0.219)
+      ),left top 57% /100% no-repeat url(pictures/Lecube.jpeg);
+}
+
+.accueil h1{
+    position: absolute;
+    left:26%;
+    top: 25%;
+    /* text-transform: uppercase; */
+    font-size: 5rem;
+    font-family: 'Cairo', sans-serif;
+    margin-bottom: 1px;
+    /* padding-bottom:5px ; */
+}
+.accueil h2{
+    position: absolute;
+    left:24.5%;
+    top:37%;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 500;
+    letter-spacing: -.08rem;
+}
+
+/* acceuil */
+
+.presentation-container{
+    display: flex;
+    flex-direction: column;
+    margin: 25px auto;
+    padding: 50px 200px 50px 280px;
+    width: 100%;
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.411), 
+        rgba(0, 0, 0, 0.513)
+      ),40% 30% / 120% no-repeat url(./pictures/TitanMini.jpeg);
+}
+.presentation-container h2{
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color:rgb(233, 233, 223) ;
+}
+
+.presentation-container p{
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color:rgb(233, 233, 223) ;
+}
+main{
+    display: flex;
+    align-items: center;
+ }
+ .oeuvres-title{
+    color: rgb(233,233,223);
+    text-align: center;
+    padding: 3rem;
+    font-size: 5rem;
+}
+/* citation */
+.citation{
+    text-align: center;
+    font-size: 5rem;
+    color:rgb(233, 233, 223) ;
+    padding: 50px ;
+    width: 100%;
+  
+}
+/* citation */
+
+  .container-all{
+    width: fit-content;
+    margin: 10px auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-img{
+    width: calc(33% - 6px);
+    overflow:hidden;
+    height: fit-content;
+    margin:3px;
+    padding: 0;
+    display:block;
+    position:relative;
+    float:left;
+    padding: 5px;
+  }
+  img{
+    width: 100%;
+    transition-duration: .3s;
+    max-width: 100%;
+    display:block;
+    overflow:hidden;
+    cursor:pointer;
+  }
+  .title{
+    position:absolute;
+    display:block;
+    cursor:pointer;
+    top: 35%;
+    display: none;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 4em;
+    text-shadow: 1px 5px 10px black;
+    transition-duration: .3s;
+  }
+  .text{
+    position:absolute;
+    top: 70%;
+    cursor:pointer;
+    max-width: 80%;
+    text-align:center;
+    left: 50%;
+    text-shadow: 1px 5px 10px black;
+    font-size: 1em;
+    display:none;
+    margin-right: -50%;
+    transition-duration: .3s;
+    transform: translate(-50%, -50%) 
+  }
+  .container-img:hover img{
+    transform: scale(1.2);
+    transition-duration: .3s;
+    filter: grayscale(50%);
+    opacity: .3;
+  }
+  .container-img:hover span{
+    color:white;
+    display: block;
+    transition-duration: .3s;
+  }
+  @media only screen and (max-width: 900px) {
+      .container-img {
+          width: calc(50% - 6px);
+      }
+  }
+  @media only screen and (max-width: 400px) {
+      .container-img {
+          width: 100%;
+      }
+  }
