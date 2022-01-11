@@ -330,10 +330,10 @@ img {
     .gallery img {
 
         max-width: 310px;
-        padding: 5px 10px;
+       padding: 0;
         box-shadow: 3px 3px 3px rgb(160, 160, 160),3px 3px 3px inset rgb(183, 183, 187);
-        padding: 30px;
-        margin: 22px auto;
+        margin: 10px 0;
+        
         max-height: 390px;
     }
 }   
