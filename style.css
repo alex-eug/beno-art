@@ -2,6 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
+
 *,
 ::before,
 ::after {
@@ -10,7 +12,7 @@
     padding: 0;
 }
 * {
-    font-family: "Cairo", sans-serif;
+    font-family:'Zilla Slab' "Cairo", sans-serif;
 }
 body {
     background: rgb(255, 251, 251);
@@ -34,7 +36,7 @@ nav {
 }
 .logo-insta:hover {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-    border-radius: 15px;
+    border-radius: 10px;
 }
 .logo-menu {
     position: absolute;
@@ -100,6 +102,11 @@ nav {
     .item-nav a {
         color: rgb(255, 255, 255);
     }
+    .item-nav a::after {
+
+        background: #fbfcff;
+     
+    }
 }
 /* nav end*/
 /* acceuil */
@@ -107,7 +114,6 @@ nav {
 .accueil {
     width: 100%;
     height: 100vh;
-    min-height: 500px;
     background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.219)),
     
     left top 57% /100% no-repeat
@@ -118,6 +124,12 @@ nav {
      box-shadow: 0px 25px 150px rgba(0, 0, 0, 0.616);
 
 }
+@media screen and (max-width: 800px) {
+    .accueil{
+        height: 50vh;
+        width: auto;
+    }
+}
 /* acceuil end */
 
 
@@ -127,15 +139,17 @@ nav {
     display: flex;
     flex-direction: column;
     /* margin: 25px auto; */
-    padding: 50px 200px 50px 280px;
+    padding: 50px 200px ;
+    margin-bottom: 15px;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.753)),
         15% 30% / 150% no-repeat url(./pictures/TitanMini.jpg);
+        background-attachment: fixed;
     
 }
 .presentation-container h2 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     text-transform: uppercase;
     color: rgb(241, 241, 234);
     margin-bottom: 30px;
@@ -143,11 +157,12 @@ nav {
 
 .presentation-container p {
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.05rem;
     color: rgb(233, 233, 223);
     text-shadow: 1px 1px 1px black;
     font-weight: 400;
-    text-align: justify;
+    text-align: center;
+    font-family: "cairo",sans-serif;    
 
 }
 
@@ -177,6 +192,11 @@ main {
     font-size: 3rem;
     text-transform: uppercase;
 }
+@media screen and (max-width: 800px) {
+    .title-lvl2{
+        font-size: 2rem;
+    }
+}
 /* citation */
 .citation {
     text-align: center;
@@ -184,13 +204,19 @@ main {
     color: rgb(161, 161, 160);
     padding: 50px;
     width: 100%;
-    margin: 50px 0 50px 0;
+    margin: 50px 0 ;
+}
+@media screen and (max-width: 800px){
+    .citation{
+        font-size: 1.6rem;
+        margin: 20px 0;
+    }
 }
 /* citation */
 /* gallery oeuvre */
 .container-all {
     width: fit-content;
-    margin: 10px auto;
+    margin:  auto;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -206,15 +232,15 @@ main {
     position: relative;
     float: left;
     padding: 5px;
-    max-width: 444px;
-    max-height: 505px;
+    max-width: 443px;
+    max-height: 565px;
     box-shadow: 5px 5px 10px black;
 }
 img {
     width: 100%;
     transition-duration: 0.3s;
-    max-width: 554px;
-    max-height: 695px;
+    max-width: 443px;
+    max-height: 555px;
     display: block;
     overflow: hidden;
     cursor: pointer;
@@ -229,7 +255,7 @@ img {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-shadow: 1px 5px 10px black;
     transition-duration: 0.3s;
 }
@@ -277,63 +303,21 @@ img {
 
 .gallery {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 90%;
     flex-wrap: wrap;
     margin: 0 auto;
+    align-content: space-around;
+    align-items:baseline;
 }
 .gallery img {
-    display: inline;
-    max-width: 550px;
+   
+    max-width: 320px;
     padding: 5px 10px;
+    box-shadow: 3px 3px 3px rgb(160, 160, 160),3px 3px 3px inset rgb(183, 183, 187);
+    padding: 30px;
+    margin: 22px auto;
+    max-height: 400px;
 }
-
 /* gallery foto */
-.contact {
-    
-    color: rgb(233, 233, 223);
-    padding: 0;
-}
-.btn-container {
-    text-align: center;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgb(107, 111, 112) 0%, rgba(80, 80, 85, 1) 35% 100%);
-    color: rgb(233, 233, 223);
-    padding: 1%;
-    clip-path: polygon(0% 0%, 75% 0%, 100% 52%, 75% 100%, 0% 100%);
-    padding: 1rem 25rem 0 15rem;
-    margin: 5rem;
-    border-radius: 30px 30px 30px 30px;
-}
-.btn {
-    height: 70px;
-    padding: 1.5rem 3rem;
-    border-radius: 10px;
-    background-color: rgb(233, 233, 223);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    box-shadow: 0px 7.5px rgb(168, 168, 157);
-    position: relative;
-    line-height: 22px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 2rem;
-    display: inline-block;
-    margin: 50px 0;
-}
-.btn > a {
-    text-decoration: none;
-    color: rgb(27, 25, 25);
-}
-.btn:hover {
-    top: 1.5px;
-    box-shadow: 0px 5.5px rgb(138, 138, 129);
-}
-.btn:active {
-    top: 5px;
-    box-shadow: 0px 0px rgb(233, 233, 223);
-}
-.para-btn {
-    font-size: 1.2rem;
-}
+
