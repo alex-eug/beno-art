@@ -307,7 +307,7 @@ img {
     flex-wrap: wrap;
     margin: 0 auto;
     align-content: space-around;
-    align-items:baseline;
+    align-items:center;
 }
 .gallery img {
    
@@ -320,9 +320,12 @@ img {
 }
 @media only screen and (max-width: 800px){
    
-    .gallery img {
-       
-       width: 100%;
+    .gallery {
+       display: flex;
+       flex-direction: column;
+       width: 90%;
+       justify-content: center;
+       align-items: center;
     }
 }   
 
