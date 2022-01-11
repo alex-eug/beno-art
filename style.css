@@ -324,17 +324,17 @@ img {
        display: flex;
        flex-direction: column;
        width: 90%;
-       justify-content: center;
+       justify-content: flex-start;
        align-items: center;
     }
     .gallery img {
    
-        max-width: 340px;
+        max-width: 380px;
         padding: 5px 10px;
         box-shadow: 3px 3px 3px rgb(160, 160, 160),3px 3px 3px inset rgb(183, 183, 187);
         padding: 30px;
         margin: 22px auto;
-        max-height: 385px;
+        max-height: 440px;
     }
 }   
 
