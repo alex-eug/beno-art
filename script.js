@@ -126,7 +126,7 @@ const gallery = [
     {
         id: 2,
         title: "....",
-        img: "gallerie/armoire.jpg",
+        img: "gallerie/armoire1.jpg",
         alt: "...",
     },
     {
