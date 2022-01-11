@@ -6,34 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pictures/favicon.jpg" type="image/png">
     <title>BeNo Paper Art</title>
 </head>
 
 <body>
-    <header class="header">
-        <nav class="header-nav">
-            <ul>
-                <li class="nav-item">
-                    <a href="#presentation">Présentation</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#oeuvre">Oeuvres</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#home">Contact</a>
-                </li>
-            </ul>
-            <a href="https://www.Instagram.com/beno_rigami">
-                <img src="./pictures/instagram-icon.png" title="instagram" alt="le logo instagram" srcset="">
-            </a>
-        </nav>
+    <!-- nav -->
+    <nav>
+        <ul class="nav-list">
+            <li class="item-nav"><a href="#presentation">Présentation</a></li>
+            <li class="item-nav"><a href="#oeuvre">Oeuvre</a></li>
+            <li class="item-nav"><a href="#gallery">Galerie</a></li>
+            <li class="item-nav"><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="https://www.Instagram.com/beno_rigami">
+            <img class="logo-insta" src="./pictures/instagram-icon.png" title="instagram" alt="le logo instagram" srcset="">
+        </a>
+        <img class="logo-menu" src="pictures/menuburger.svg" alt="logo-menu"> 
+    </nav>
+    <!-- accueil -->
+     
         <div class="accueil">
-            <h1>BeNo </h1>
-            <h2>Artiste Papier </h2>
-        </div>
-    </header>
-    <article>
+       
 
+        </div>
+     
+      </div>
+    <article>
+        <p class="citation">
+            “ Platon avait raison : la terre est faite de cubes. ”</p>
+        
         <div class=" presentation-container" id="presentation">
             <h2>Présentation de l'artiste</h2>
             <p>BeNo est un artiste papier utilisant le cube sans aucun collage. Il réalise des structures géométriques
@@ -48,12 +50,32 @@
 
     </article>
 
-    <p class="citation">
-        “ Platon avait raison : la terre est faite de cubes. ”</p>
 
-    <h2 id="oeuvre" class="oeuvres-title">Les Oeuvres</h2>
+    <h2 id="oeuvre" class="oeuvres-title title-lvl2">Les Oeuvres</h2>
 
     <div class="container-all"></div>
+
+    <h2 id="oeuvre" class="title-lvl2 gallery-title">Galerie</h2>
+
+    <div  id="gallery" class="gallery"></div>
+
+
+
+
+    <div class="btn-container">
+        <h2 id="contact" class="contact title-lvl2">Contact</h2>
+        <p class="para-btn">Vous avez la possibilité d’acheter mes œuvres au format affiche à faire encadrer. Adresser
+            dans ce cas une première demande de contact via le site internet ou par mail : benopaperartist@gmail.com
+            avec le nom de la structure de votre choix. Les œuvres sont numérotées et signées. .
+            Pour l’achat de structure en papier, adresser un mail dans la rubrique contact . La structure peut être
+            blanche ou être décorée selon votre demande. Elle sera accompagnée d’un certificat d’authenticité daté et
+            signé par l’artiste.
+            BeNo. Artiste Papier
+        </p>
+        <div class="btn"><a href="mailto:benopaperartist@gmail.com">Envoyer votre email</div>
+    </div>
+
+
 
     <script src="script.js" defer></script>
 </body>
