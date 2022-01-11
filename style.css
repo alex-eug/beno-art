@@ -116,7 +116,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover; */
      box-shadow: 0px 25px 150px rgba(0, 0, 0, 0.616);
-display: inline-block;
+
 }
 /* acceuil end */
 
@@ -287,6 +287,7 @@ img {
 
 /* gallery foto */
 .contact {
+    
     color: rgb(233, 233, 223);
     padding: 0;
 }
