@@ -175,6 +175,7 @@ main {
     text-align: center;
     padding: 3rem;
     font-size: 3rem;
+    text-transform: uppercase;
 }
 /* citation */
 .citation {
@@ -205,8 +206,8 @@ main {
     position: relative;
     float: left;
     padding: 5px;
-    max-width: 554px;
-    max-height: 695px;
+    max-width: 444px;
+    max-height: 505px;
     box-shadow: 5px 5px 10px black;
 }
 img {
