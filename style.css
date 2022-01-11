@@ -327,6 +327,15 @@ img {
        justify-content: center;
        align-items: center;
     }
+    .gallery img {
+   
+        max-width: 1000px;
+        padding: 5px 10px;
+        box-shadow: 3px 3px 3px rgb(160, 160, 160),3px 3px 3px inset rgb(183, 183, 187);
+        padding: 30px;
+        margin: 22px auto;
+        max-height: 1000px;
+    }
 }   
 
 /* gallery foto */
